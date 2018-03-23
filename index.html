@@ -1,0 +1,2755 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Cryptovation.co</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+
+      <!-- Logo Cryptovation -->
+      <div class="row">
+        <div class="col-md-12">
+          <center><a href="https://cryptovation.co/"><img class="compLogo" src="images/compLogo-black.png" ></a></center>
+        </div> <!-- /.col -->
+      </div> <!-- /.row -->
+
+      <!-- Introduction -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h5><center>ยินดีต้อนรับทุกท่านเข้าสู่การใช้งาน Arbot 1.4 Beta โดยก่อนจะเข้าใช้งานระบบนี้ได้ ท่านจะต้องเตรียมพร้อมบัญชีซื้อขายในแต่ละตลาดของท่านตามดังนี้ <a href="https://blog.cryptovation.co/">คลิกที่นี่</a> </center></h5>
+              <h5><center>Welcome to the very first Arbot 1.8 Beta! Please note that you must have account on all used exchanges to successfully execute all the arbitraging opportunities,  <a href="https://blog.cryptovation.co/">click here</a> for instruction.</center></h5>
+            </div> <!-- /.panel-body -->
+          </div> <!-- /.panel-default -->
+        </div> <!-- /.col -->
+      </div> <!-- /.row -->
+
+      <!-- Real-Time Trading Chart -->
+
+      <div class="col-md-12">
+          <div class="panel panel-primary">
+            <div class="panel-heading" id="Real-Time Crypto">
+              <h2><center> Real-Time Cryptocurrency Price based on USD</center></h2>
+            </div> <!-- /.panel-body -->
+          </div> <!-- /.panel-default -->
+        </div> <!-- /.col -->
+
+
+      <div class="row">
+
+        <div class="col-md-12">
+
+          <div class="panel panel-primary">
+
+            <div class="row">
+
+      </div> <!-- /.row -->
+            <div class="panel-body">
+
+              <div class="table-responsive">
+
+                <table class="table table-bordered">
+
+                  <thead>
+
+                    <tr class="logo">
+
+                      <th style="vertical-align: middle;"><center>Exchange Market</center></th>
+
+                      <th class="danger" colspan="2"><a target ="_blank" href="https://bitcoin.org/en/"><img class="logo" src="images/BTClogo.png" ></a> Bitcoin (BTC)</th>
+
+                      <th class="success" colspan="2"><a target ="_blank" href="https://www.ethereum.org/"><img class="logo" src="images/ETHlogo.png" ></a> Ethereum (ETH)</th>
+
+                      <th class="warning" colspan="2"><a target ="_blank" href="https://ripple.com/"><img class="logo" src="images/XRPlogo.png" ></a> Ripple (XRP) </th>
+
+                      <th class="info" colspan="2"><a target ="_blank" href="https://ethereumclassic.github.io/"><img class="logo" src="images/ETClogo.png" ></a> Ethereum Classic (ETC) </th>
+                      <th class="yed" colspan="2"><a target ="_blank" href="https://litecoin.org/"><img class="logo" src="images/LTClogo.png" ></a> Litecoin (LTC) </th>
+                    </tr>
+
+                    <tr>
+                    <th style="vertical-align: middle;"><center>Region</center></th>
+
+                      <th class="danger">Buy</td>
+
+                      <th class="danger">Sell</td>
+
+                      <th class="success">Buy</td>
+
+                      <th class="success">Sell</td>
+
+                      <th class="warning">Buy</td>
+
+                      <th class="warning">Sell</td>
+
+                      <th class="info">Buy</td>
+
+                      <th class="info">Sell</td>
+
+                      <th class="yed">Buy</td>
+
+                      <th class="yed">Sell</td>
+
+                    </tr>
+
+                  </thead>
+
+                  <tbody>
+
+                    <tr>
+
+                      <td>
+                        <center>
+                          <a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logoPrice" src="images/krakenLogo.png">
+                          </a>
+                        <br>
+                          EU/USA
+                        </center>
+                      </td>
+
+                      <td class="danger" id="KK-BTC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="danger" id="KK-BTC_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KK-ETH_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KK-ETH_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="KK-XRP_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="KK-XRP_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="KK-ETC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="KK-ETC_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="KK-LTC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="KK-LTC_sellchoice" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td>
+                        <center>
+                          <a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logoPrice" src="images/coinoneLogo.png">
+                          </a>
+                          <br>
+                            Korea
+                        </center>
+                      </td>
+
+                      <td class="danger" id="CO-BTC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="danger" id="CO-BTC_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="CO-ETH_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="CO-ETH_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="CO-XRP_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="CO-XRP_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="CO-ETC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="CO-ETC_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="CO-LTC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="CO-LTC_sellchoice" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                     <tr>
+
+                      <td>
+                        <center>
+                          <a target ="_blank" href="https://www.korbit.co.kr">
+                            <img class="logoPrice" src="images/korbitLogo.png">
+                          </a>
+                        <br>
+                          Korea
+                        </center>
+                      </td>
+
+                      <td class="danger" id="KB-BTC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="danger" id="KB-BTC_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KB-ETH_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KB-ETH_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  id="KB-XRP_buychoice" style="vertical-align: middle;">-</td>
+
+                      <td class="warning"  id="KB-XRP_sellchoice" style="vertical-align: middle;">-</td>
+
+                      <td class="info"  id="KB-ETC_buychoice" style="vertical-align: middle;">-</td>
+
+                      <td class="info"  id="KB-ETC_sellchoice" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td>
+                        <center>
+                          <a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logoPrice" src="images/poloniexLogo.png">
+                          </a>
+                        <br>
+                          USA
+                        </center>
+                      </td>
+
+                      <td class="danger" id="PO-BTC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="danger" id="PO-BTC_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="PO-ETH_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="PO-ETH_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="PO-XRP_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="PO-XRP_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="PO-ETC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="PO-ETC_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="PO-LTC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="PO-LTC_sellchoice" style="vertical-align: middle;"></td>
+
+
+                    </tr>
+
+                     <tr>
+
+                      <td>
+                        <center>
+                          <a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logoPrices" src="images/bxLogo.png">
+                          </a>
+                        <br>
+                          Thailand
+                        </center>
+                      </td>
+
+                      <td class="danger" id="BX-BTC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="danger" id="BX-BTC_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BX-ETH_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BX-ETH_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BX-XRP_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BX-XRP_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="info" style="vertical-align: middle;">-</td>
+
+                      <td class="info" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BX-LTC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="BX-LTC_sellchoice" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <!-- <tr>
+
+                      <td>
+                        <center>
+                          <a target ="_blank" href="https://www.huobi.pro/">
+                            <img class="logoPrice" src="images/huobiLogo.png">
+                          </a>
+                        <br>
+                          China
+                        </center>
+                      </td>
+
+                      <td class="danger" id="HB-BTC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="danger" id="HB-BTC_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="HB-ETH_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="HB-ETH_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="HB-XRP_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="HB-XRP_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="HB-ETC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="HB-ETC_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="yed"  id="HB-LTC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="HB-LTC_sellchoice" style="vertical-align: middle;"></td>
+
+                    </tr>  -->
+
+                    <tr>
+
+                      <td>
+                        <center>
+                          <a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logoPrices" src="images/bitfinexLogo.png">
+                          </a>
+                        <br>
+                          USA
+                        </center>
+                      </td>
+
+                      <td class="danger" id="BF-BTC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="danger" id="BF-BTC_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BF-ETH_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BF-ETH_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BF-XRP_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BF-XRP_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BF-ETC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BF-ETC_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="BF-LTC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="BF-LTC_sellchoice" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td>
+                        <center>
+                          <a target ="_blank" href="https://bittrex.com/">
+                            <img class="logoPrices" src="images/bittrexLogo.png">
+                          </a>
+                        <br>
+                          USA
+                        </center>
+                      </td>
+
+                      <td class="danger" id="BT-BTC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="danger" id="BT-BTC_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BT-ETH_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BT-ETH_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BT-XRP_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BT-XRP_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BT-ETC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BT-ETC_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="BT-LTC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="BT-LTC_sellchoice" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td>
+                        <center>
+                          <a target ="_blank" href="https://www.bitstamp.net">
+                            <img class="logoPrice" src="images/bitstampLogo.png">
+                          </a>
+                        <br>
+                          UK
+                        </center>
+                      </td>
+
+                      <td class="danger" id="BS-BTC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="danger" id="BS-BTC_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BS-ETH_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BS-ETH_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BS-XRP_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BS-XRP_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="info" style="vertical-align: middle;">-</td>
+
+                      <td class="info" style="vertical-align: middle;">-</td>
+
+                      <td class="yed"  id="BS-LTC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="BS-LTC_sellchoice" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td>
+                        <center>
+                          <a target ="_blank" href="https://www.binance.com/?ref=11125918">
+                            <img class="logoPrice" src="images/binanceLogo.png">
+                          </a>
+                        <br>
+                          China
+                        </center>
+                      </td>
+
+                      <td class="danger" id="BN-BTC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="danger" id="BN-BTC_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BN-ETH_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BN-ETH_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" style="vertical-align: middle;">-</td>
+
+                      <td class="warning" style="vertical-align: middle;">-</td>
+
+                      <td class="info" style="vertical-align: middle;">-</td>
+
+                      <td class="info" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BN-LTC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="BN-LTC_sellchoice" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+
+                    <tr>
+
+                      <td>
+                        <center>
+                          <a target ="_blank" href="https://accounts.quoinex.com/sign-up?affiliate=DiMNhHR388414">
+                            <img class="logoPrice" src="images/quoinexLogo.png">
+                          </a>
+                        <br>
+                          Japan
+                        </center>
+                      </td>
+
+                      <td class="danger" id="QN-BTC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="danger" id="QN-BTC_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="QN-ETH_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="QN-ETH_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" style="vertical-align: middle;">-</td>
+
+                      <td class="warning" style="vertical-align: middle;">-</td>
+
+                      <td class="info" style="vertical-align: middle;">-</td>
+
+                      <td class="info" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+
+
+
+                  </tbody>
+
+                </table>
+                 $ = US Dollar    | ₩ = South Korean Won |  ฿ = Thai Baht
+
+
+
+              </div> <!-- /.table-responsive -->
+
+            </div> <!-- /.panel-body -->
+
+
+          </div> <!-- /.panel-primary -->
+
+        </div> <!-- /.col -->
+
+      </div> <!-- /.row -->
+
+      <div class="container">
+
+
+
+      <!-- Logo Cryptovation -->
+
+     <div class="col-md-12">
+          <div class="panel panel-primary">
+            <div class="panel-heading" id="One-Way Crypto">
+              <h2><center> One-Way Arbitraging Table</center></h2>
+            </div> <!-- /.panel-body -->
+          </div> <!-- /.panel-default -->
+        </div> <!-- /.col -->
+
+
+<!-- Real-Time Trading Chart -->
+
+      <div class="row">
+
+        <div class="col-md-12">
+
+          <div class="panel panel-primary">
+
+
+
+            <div class="panel-body">
+
+              <div class="table-responsive">
+
+                <table class="table table-bordered">
+
+                  <thead>
+
+                    <tr>
+
+                      <th style="vertical-align: middle;">Market</th>
+
+                      <th class="danger" ><img class="logo" src="images/BTClogo.png"> BTC</th>
+
+                      <th class="success" ><img class="logo" src="images/ETHlogo.png"> ETH</th>
+
+                      <th class="warning" ><img class="logo" src="images/XRPlogo.png"> XRP</th>
+
+                      <th class="info" ><img class="logo" src="images/ETClogo.png"> ETC</th>
+
+                      <th class="yed" ><img class="logo" src="images/LTClogo.png"> LTC</th>
+
+                    </tr>
+
+
+
+                  </thead>
+
+                 <tbody>
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logoOneway" src="images/krakenLogo.png">
+                          </a> to <a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logoOneway" src="images/coinoneLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="KK-CO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KK-CO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="KK-CO_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="KK-CO_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="KK-CO_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logoOneway" src="images/krakenLogo.png">
+                          </a> to <a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logoOneway" src="images/poloniexLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="KK-PO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KK-PO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="KK-PO_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="KK-PO_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="KK-PO_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logoOneway" src="images/krakenLogo.png">
+                          </a> to <a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logoOneway" src="images/bxLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="KK-BX_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KK-BX_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="KK-BX_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="KK-BX_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="KK-BX_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+                    <!--
+                    <tr>
+
+                      <tr>
+
+                      <td><a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logoOneway" src="images/krakenLogo.png">
+                          </a> to <a target ="_blank" href="https://www.huobi.pro/">
+                            <img class="logoOneway" src="images/huobiLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="KK-HB_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KK-HB_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="KK-HB_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="KK-HB_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="KK-HB_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> -->
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logoOneway" src="images/krakenLogo.png">
+                          </a> to <a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logoOneway" src="images/bitfinexLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="KK-BF_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KK-BF_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="KK-BF_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="KK-BF_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="KK-BF_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logoOneway" src="images/krakenLogo.png">
+                          </a> to <a target ="_blank" href="https://bittrex.com/">
+                            <img class="logoOneway" src="images/bittrexLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="KK-BT_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KK-BT_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="KK-BT_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="KK-BT_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="KK-BT_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logoOneway" src="images/krakenLogo.png">
+                          </a> to <a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logoOneway" src="images/bitstampLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="KK-BS_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KK-BS_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="KK-BS_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="KK-BS_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="KK-BS_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                     <tr>
+
+                      <td><a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logoOneway" src="images/krakenLogo.png">
+                          </a> to <a target ="_blank" href="https://www.binance.com/?ref=11125918">
+                            <img class="logoOneway" src="images/binanceLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="KK-BN_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KK-BN_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="KK-BN_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logoOneway" src="images/krakenLogo.png">
+                          </a> to <a target ="_blank" href="https://accounts.quoinex.com/sign-up?affiliate=DiMNhHR388414">
+                            <img class="logoOneway" src="images/quoinexLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="KK-QN_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KK-QN_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+                     <tr>
+
+                      <td><a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logoOneway" src="images/krakenLogo.png">
+                          </a> to <a target ="_blank" href="https://www.korbit.co.kr">
+                            <img class="logoOneway" src="images/korbitLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="KK-KB_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KK-KB_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"   id="KK-KB_XRP_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="info"  id="KK-KB_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logoOneway" src="images/coinoneLogo.png">
+                          </a> to <a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logoOneway" src="images/krakenLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="CO-KK_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="CO-KK_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="CO-KK_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="CO-KK_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="CO-KK_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logoOneway" src="images/coinoneLogo.png">
+                          </a> to <a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logoOneway" src="images/poloniexLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="CO-PO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="CO-PO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="CO-PO_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="CO-PO_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="CO-PO_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logoOneway" src="images/coinoneLogo.png">
+                          </a> to <a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logoOneway" src="images/bxLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="CO-BX_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="CO-BX_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="CO-BX_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="CO-BX_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="CO-BX_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <!-- tr>
+
+                      <tr>
+
+                     <td><a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logoOneway" src="images/coinoneLogo.png">
+                          </a> to <a target ="_blank" href="https://www.huobi.pro/">
+                            <img class="logoOneway" src="images/huobiLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="CO-HB_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="CO-HB_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="CO-HB_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="CO-HB_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="CO-HB_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> -->
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logoOneway" src="images/coinoneLogo.png">
+                          </a> to <a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logoOneway" src="images/bitfinexLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="CO-BF_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="CO-BF_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="CO-BF_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="CO-BF_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="CO-BF_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logoOneway" src="images/coinoneLogo.png">
+                          </a> to <a target ="_blank" href="https://bittrex.com/">
+                            <img class="logoOneway" src="images/bittrexLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="CO-BT_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="CO-BT_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="CO-BT_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="CO-BT_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="CO-BT_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logoOneway" src="images/coinoneLogo.png">
+                          </a> to <a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logoOneway" src="images/bitstampLogo.png">
+                          </a></td>
+
+
+                      <td class="danger" id="CO-BS_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="CO-BS_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="CO-BS_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="CO-BS_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="CO-BS_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logoOneway" src="images/coinoneLogo.png">
+                          </a> to <a target ="_blank" href="https://www.binance.com/?ref=11125918">
+                            <img class="logoOneway" src="images/binanceLogo.png">
+                          </a></td>
+
+
+                      <td class="danger" id="CO-BN_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="CO-BN_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="CO-BN_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                      <tr>
+
+                       <td><a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logoOneway" src="images/coinoneLogo.png">
+                          </a> to <a target ="_blank" href="https://accounts.quoinex.com/sign-up?affiliate=DiMNhHR388414">
+                            <img class="logoOneway" src="images/quoinexLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="CO-QN_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="CO-QN_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+                     <tr>
+
+                      <td><a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logoOneway" src="images/coinoneLogo.png">
+                          </a> to <a target ="_blank" href="https://www.korbit.co.kr">
+                            <img class="logoOneway" src="images/korbitLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="CO-KB_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="CO-KB_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"   id="CO-KB_XRP_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="info"  id="CO-KB_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+                     <tr>
+
+                      <td><a target ="_blank" href="https://www.korbit.co.kr">
+                            <img class="logoOneway" src="images/korbitLogo.png">
+                          </a> to <a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logoOneway" src="images/krakenLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="KB-KK_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KB-KK_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="KB-KK_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="KB-KK_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://www.korbit.co.kr">
+                            <img class="logoOneway" src="images/korbitLogo.png">
+                          </a> to <a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logoOneway" src="images/poloniexLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="KB-PO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KB-PO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="KB-PO_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="KB-PO_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed"  style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://www.korbit.co.kr">
+                            <img class="logoOneway" src="images/korbitLogo.png">
+                          </a> to <a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logoOneway" src="images/bxLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="KB-BX_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KB-BX_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="KB-BX_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="KB-BX_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed"  style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+                    <!-- tr>
+
+                      <tr>
+
+                     <td><a target ="_blank" href="https://www.korbit.co.kr">
+                            <img class="logoOneway" src="images/korbitLogo.png">
+                          </a> to <a target ="_blank" href="https://www.huobi.pro/">
+                            <img class="logoOneway" src="images/huobiLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="KB-HB_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KB-HB_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="KB-HB_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="KB-HB_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="KB-HB_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> -->
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://www.korbit.co.kr">
+                            <img class="logoOneway" src="images/korbitLogo.png">
+                          </a> to <a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logoOneway" src="images/bitfinexLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="KB-BF_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KB-BF_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="KB-BF_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="KB-BF_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed"  style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://www.korbit.co.kr">
+                            <img class="logoOneway" src="images/korbitLogo.png">
+                          </a> to <a target ="_blank" href="https://bittrex.com/">
+                            <img class="logoOneway" src="images/bittrexLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="KB-BT_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KB-BT_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="KB-BT_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="KB-BT_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://www.korbit.co.kr">
+                            <img class="logoOneway" src="images/korbitLogo.png">
+                          </a> to <a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logoOneway" src="images/bitstampLogo.png">
+                          </a></td>
+
+
+                      <td class="danger" id="KB-BS_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KB-BS_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="KB-BS_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="KB-BS_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed"  style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://www.korbit.co.kr">
+                            <img class="logoOneway" src="images/korbitLogo.png">
+                          </a> to <a target ="_blank" href="https://www.binance.com/?ref=11125918">
+                            <img class="logoOneway" src="images/binanceLogo.png">
+                          </a></td>
+
+
+                      <td class="danger" id="KB-BN_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KB-BN_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+                      <tr>
+
+                       <td><a target ="_blank" href="https://www.korbit.co.kr">
+                            <img class="logoOneway" src="images/korbitLogo.png">
+                          </a> to <a target ="_blank" href="https://accounts.quoinex.com/sign-up?affiliate=DiMNhHR388414">
+                            <img class="logoOneway" src="images/quoinexLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="KB-QN_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KB-QN_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+                     <tr>
+
+                      <td><a target ="_blank" href="https://www.korbit.co.kr">
+                            <img class="logoOneway" src="images/korbitLogo.png">
+                          </a> to <a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logoOneway" src="images/coinoneLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="KB-CO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KB-CO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"   id="KB-CO_XRP_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="info"  id="KB-CO_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logoOneway" src="images/poloniexLogo.png">
+                          </a> to <a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logoOneway" src="images/krakenLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="PO-KK_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="PO-KK_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="PO-KK_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="PO-KK_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="PO-KK_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                     <tr>
+
+                      <td><a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logoOneway" src="images/poloniexLogo.png">
+                          </a> to <a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logoOneway" src="images/coinoneLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="PO-CO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="PO-CO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="PO-CO_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="PO-CO_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="PO-CO_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logoOneway" src="images/poloniexLogo.png">
+                          </a> to <a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logoOneway" src="images/bxLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="PO-BX_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="PO-BX_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="PO-BX_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="PO-BX_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="PO-BX_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+
+
+                     <!--  <tr>
+
+                     <td><a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logoOneway" src="images/poloniexLogo.png">
+                          </a> to <a target ="_blank" href="https://www.huobi.pro/">
+                            <img class="logoOneway" src="images/huobiLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="PO-HB_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="PO-HB_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="PO-HB_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="PO-HB_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="PO-HB_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> -->
+
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logoOneway" src="images/poloniexLogo.png">
+                          </a> to <a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logoOneway" src="images/bitfinexLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="PO-BF_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="PO-BF_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="PO-BF_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="PO-BF_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="PO-BF_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logoOneway" src="images/poloniexLogo.png">
+                          </a> to <a target ="_blank" href="https://bittrex.com/">
+                            <img class="logoOneway" src="images/bittrexLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="PO-BT_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="PO-BT_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="PO-BT_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="PO-BT_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="PO-BT_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logoOneway" src="images/poloniexLogo.png">
+                          </a> to <a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logoOneway" src="images/bitstampLogo.png">
+                          </a></td>
+                      <td class="danger" id="PO-BS_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="PO-BS_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="PO-BS_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="PO-BS_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="PO-BS_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                     <tr>
+
+                      <td><a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logoOneway" src="images/poloniexLogo.png">
+                          </a> to <a target ="_blank" href="https://www.binance.com/?ref=11125918">
+                            <img class="logoOneway" src="images/binanceLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="PO-BN_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="PO-BN_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="PO-BN_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                     <tr>
+
+                        <td><a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logoOneway" src="images/poloniexLogo.png">
+                          </a> to <a target ="_blank" href="https://accounts.quoinex.com/sign-up?affiliate=DiMNhHR388414">
+                            <img class="logoOneway" src="images/quoinexLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="PO-QN_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="PO-QN_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+                     <tr>
+
+                      <td><a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logoOneway" src="images/poloniexLogo.png">
+                          </a> to <a target ="_blank" href="https://www.korbit.co.kr">
+                            <img class="logoOneway" src="images/korbitLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="PO-KB_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="PO-KB_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"   id="PO-KB_XRP_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="info"  id="PO-KB_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logoOneway" src="images/bxLogo.png">
+                          </a> to <a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logoOneway" src="images/krakenLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BX-KK_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BX-KK_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BX-KK_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BX-KK_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BX-KK_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+
+
+                    <tr>
+
+                       <td><a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logoOneway" src="images/bxLogo.png">
+                          </a>to <a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logoOneway" src="images/coinoneLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BX-CO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BX-CO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BX-CO_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BX-CO_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BX-CO_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logoOneway" src="images/bxLogo.png">
+                          </a>to<a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logoOneway" src="images/poloniexLogo.png">
+                          </a></td>
+                      <td class="danger" id="BX-PO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BX-PO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BX-PO_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BX-PO_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BX-PO_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                     <tr>
+
+                    <!-- <td><a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logoOneway" src="images/bxLogo.png">
+                          </a> to <a target ="_blank" href="https://www.huobi.pro/">
+                            <img class="logoOneway" src="images/huobiLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BX-HB_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BX-HB_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BX-HB_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BX-HB_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BX-HB_LTC_oneWay" style="vertical-align: middle;">-</td>
+
+                    </tr>
+ -->
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logoOneway" src="images/bxLogo.png">
+                          </a>to<a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logoOneway" src="images/bitfinexLogo.png">
+                          </a></td>
+                      <td class="danger" id="BX-BF_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BX-BF_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BX-BF_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BX-BF_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BX-BF_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logoOneway" src="images/bxLogo.png">
+                          </a> to <a target ="_blank" href="https://bittrex.com/">
+                            <img class="logoOneway" src="images/bittrexLogo.png">
+                          </a></td>
+                      <td class="danger" id="BX-BT_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BX-BT_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BX-BT_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BX-BT_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BX-BT_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logoOneway" src="images/bxLogo.png">
+                          </a> to <a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logoOneway" src="images/bitstampLogo.png">
+                          </a></td>
+                      <td class="danger" id="BX-BS_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BX-BS_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BX-BS_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BX-BS_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BX-BS_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                     <tr>
+
+                     <td><a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logoOneway" src="images/bxLogo.png">
+                          </a> to <a target ="_blank" href="https://www.binance.com/?ref=11125918">
+                            <img class="logoOneway" src="images/binanceLogo.png">
+                          </a></td>
+                      <td class="danger" id="BX-BN_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BX-BN_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed"  id="BX-BN_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                     <tr>
+
+                        <td><a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logoOneway" src="images/bxLogo.png">
+                          </a> to <a target ="_blank" href="https://accounts.quoinex.com/sign-up?affiliate=DiMNhHR388414">
+                            <img class="logoOneway" src="images/quoinexLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BX-QN_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BX-QN_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+                     <tr>
+
+                      <td><a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logoOneway" src="images/bxLogo.png">
+                          </a> to <a target ="_blank" href="https://www.korbit.co.kr">
+                            <img class="logoOneway" src="images/korbitLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BX-KB_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BX-KB_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"   id="BX-KB_XRP_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="info"  id="BX-KB_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+<!--
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.huobi.pro/">
+                            <img class="logoOneway" src="images/huobiLogo.png">
+                          </a> to <a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logoOneway" src="images/krakenLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="HB-KK_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="HB-KK_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="HB-KK_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="HB-KK_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="HB-KK_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>  -->
+
+
+
+                  <!--   <tr>
+
+                       <td><a target ="_blank" href="https://www.huobi.pro/">
+                            <img class="logoOneway" src="images/huobiLogo.png">
+                          </a>to <a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logoOneway" src="images/coinoneLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="HB-CO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="HB-CO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="HB-CO_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="HB-CO_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="HB-CO_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.huobi.pro/">
+                            <img class="logoOneway" src="images/huobiLogo.png">
+                          </a>to<a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logoOneway" src="images/poloniexLogo.png">
+                          </a></td>
+                      <td class="danger" id="HB-PO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="HB-PO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="HB-PO_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="HB-PO_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="HB-PO_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://www.huobi.pro/">
+                            <img class="logoOneway" src="images/huobiLogo.png">
+                          </a> to <a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logoOneway" src="images/bxLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="HB-BX_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="HB-BX_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="HB-BX_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="HB-BX_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="HB-BX_LTC_oneWay" style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.huobi.pro/">
+                            <img class="logoOneway" src="images/huobiLogo.png">
+                          </a>to<a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logoOneway" src="images/bitfinexLogo.png">
+                          </a></td>
+                      <td class="danger" id="HB-BF_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="HB-BF_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="HB-BF_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="HB-BF_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="HB-BF_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.huobi.pro/">
+                            <img class="logoOneway" src="images/huobiLogo.png">
+                          </a> to <a target ="_blank" href="https://bittrex.com/">
+                            <img class="logoOneway" src="images/bittrexLogo.png">
+                          </a></td>
+                      <td class="danger" id="HB-BT_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="HB-BT_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="HB-BT_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="HB-BT_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="HB-BT_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.huobi.pro/">
+                            <img class="logoOneway" src="images/huobiLogo.png">
+                          </a> to <a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logoOneway" src="images/bitstampLogo.png">
+                          </a></td>
+                      <td class="danger" id="HB-BS_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="HB-BS_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="HB-BS_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="HB-BS_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="HB-BS_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                     <tr>
+
+                     <td><a target ="_blank" href="https://www.huobi.pro/">
+                            <img class="logoOneway" src="images/huobiLogo.png">
+                          </a> to <a target ="_blank" href="https://www.binance.com/?ref=11125918">
+                            <img class="logoOneway" src="images/binanceLogo.png">
+                          </a></td>
+                      <td class="danger" id="HB-BN_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="HB-BN_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="HB-BN_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>  -->
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logoOneway" src="images/bitfinexLogo.png">
+                          </a> to <a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logoOneway" src="images/krakenLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BF-KK_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BF-KK_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BF-KK_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BF-KK_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="BF-KK_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+
+
+                    <tr>
+
+                       <td><a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logoOneway" src="images/bitfinexLogo.png">
+                          </a>to <a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logoOneway" src="images/coinoneLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BF-CO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BF-CO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BF-CO_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BF-CO_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="BF-CO_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logoOneway" src="images/bitfinexLogo.png">
+                          </a>to<a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logoOneway" src="images/poloniexLogo.png">
+                          </a></td>
+                      <td class="danger" id="BF-PO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BF-PO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BF-PO_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BF-PO_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="BF-PO_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logoOneway" src="images/bitfinexLogo.png">
+                          </a>to<a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logoOneway" src="images/bxLogo.png">
+                          </a></td>
+                      <td class="danger" id="BF-BX_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BF-BX_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BF-BX_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BF-BX_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BF-BX_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                     <!-- <tr>
+
+                  <td><a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logoOneway" src="images/bitfinexLogo.png">
+                          </a> to <a target ="_blank" href="https://www.huobi.pro/">
+                            <img class="logoOneway" src="images/huobiLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BF-HB_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BF-HB_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BF-HB_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BF-HB_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="BF-HB_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> -->
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logoOneway" src="images/bitfinexLogo.png">
+                          </a> to <a target ="_blank" href="https://bittrex.com/">
+                            <img class="logoOneway" src="images/bittrexLogo.png">
+                          </a></td>
+                      <td class="danger" id="BF-BT_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BF-BT_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BF-BT_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BF-BT_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="BF-BT_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logoOneway" src="images/bitfinexLogo.png">
+                          </a> to <a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logoOneway" src="images/bitstampLogo.png">
+                          </a></td>
+                      <td class="danger" id="BF-BS_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BF-BS_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BF-BS_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BF-BS_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BF-BS_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                   <tr>
+
+                     <td><a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logoOneway" src="images/bitfinexLogo.png">
+                          </a> to <a target ="_blank" href="https://www.binance.com/?ref=11125918">
+                            <img class="logoOneway" src="images/binanceLogo.png">
+                          </a></td>
+                      <td class="danger" id="BF-BN_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BF-BN_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BF-BN_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logoOneway" src="images/bitfinexLogo.png">
+                          </a> to <a target ="_blank" href="https://accounts.quoinex.com/sign-up?affiliate=DiMNhHR388414">
+                            <img class="logoOneway" src="images/quoinexLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BF-QN_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BF-QN_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+                     <tr>
+
+                      <td><a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logoOneway" src="images/bitfinexLogo.png">
+                          </a> to <a target ="_blank" href="https://www.korbit.co.kr">
+                            <img class="logoOneway" src="images/korbitLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BF-KB_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BF-KB_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"   id="BF-KB_XRP_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="info"  id="BF-KB_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://bittrex.com/">
+                            <img class="logoOneway" src="images/bittrexLogo.png">
+                          </a> to <a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logoOneway" src="images/krakenLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BT-KK_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BT-KK_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BT-KK_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BT-KK_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="BT-KK_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+
+
+                    <tr>
+
+                       <td><a target ="_blank" href="https://bittrex.com/">
+                            <img class="logoOneway" src="images/bittrexLogo.png">
+                          </a>to <a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logoOneway" src="images/coinoneLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BT-CO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BT-CO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BT-CO_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BT-CO_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="BT-CO_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://bittrex.com/">
+                            <img class="logoOneway" src="images/bittrexLogo.png">
+                          </a>to<a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logoOneway" src="images/poloniexLogo.png">
+                          </a></td>
+                      <td class="danger" id="BT-PO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BT-PO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BT-PO_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BT-PO_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="BT-PO_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://bittrex.com/">
+                            <img class="logoOneway" src="images/bittrexLogo.png">
+                          </a>to<a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logoOneway" src="images/bxLogo.png">
+                          </a></td>
+                      <td class="danger" id="BT-BX_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BT-BX_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BT-BX_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BT-BX_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BT-BX_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                     <!--  <tr>
+                           <td><a target ="_blank" href="https://bittrex.com/">
+                            <img class="logoOneway" src="images/bittrexLogo.png">
+                          </a> to <a target ="_blank" href="https://www.huobi.pro/">
+                            <img class="logoOneway" src="images/huobiLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BT-HB_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BT-HB_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BT-HB_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BT-HB_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="BT-HB_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> -->
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://bittrex.com/">
+                            <img class="logoOneway" src="images/bittrexLogo.png">
+                          </a>to<a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logoOneway" src="images/bitfinexLogo.png">
+                          </a></td>
+                      <td class="danger" id="BT-BF_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BT-BF_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BT-BF_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BT-BF_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="yed" id="BT-BF_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://bittrex.com/">
+                            <img class="logoOneway" src="images/bittrexLogo.png">
+                          </a> to <a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logoOneway" src="images/bitstampLogo.png">
+                          </a></td>
+                      <td class="danger" id="BT-BS_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BT-BS_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BT-BS_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BT-BS_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BT-BS_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://bittrex.com/">
+                            <img class="logoOneway" src="images/bittrexLogo.png">
+                          </a> to <a target ="_blank" href="https://www.binance.com/?ref=11125918">
+                            <img class="logoOneway" src="images/binanceLogo.png">
+                          </a></td>
+                      <td class="danger" id="BT-BN_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BT-BN_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BT-BN_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                       <td><a target ="_blank" href="https://bittrex.com/">
+                            <img class="logoOneway" src="images/bittrexLogo.png">
+                          </a> to <a target ="_blank" href="https://accounts.quoinex.com/sign-up?affiliate=DiMNhHR388414">
+                            <img class="logoOneway" src="images/quoinexLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BT-QN_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BT-QN_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+                     <tr>
+
+                      <td><a target ="_blank" href="https://bittrex.com/">
+                            <img class="logoOneway" src="images/bittrexLogo.png">
+                          </a> to <a target ="_blank" href="https://www.korbit.co.kr">
+                            <img class="logoOneway" src="images/korbitLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BT-KB_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BT-KB_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"   id="BT-KB_XRP_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="info"  id="BT-KB_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logoOneway" src="images/bitstampLogo.png">
+                          </a> to <a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logoOneway" src="images/krakenLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BS-KK_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BS-KK_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BS-KK_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BS-KK_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BS-KK_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+
+
+                    <tr>
+
+                       <td><a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logoOneway" src="images/bitstampLogo.png">
+                          </a>to <a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logoOneway" src="images/coinoneLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BS-CO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BS-CO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BS-CO_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BS-CO_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BS-CO_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logoOneway" src="images/bitstampLogo.png">
+                          </a>to<a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logoOneway" src="images/poloniexLogo.png">
+                          </a></td>
+                      <td class="danger" id="BS-PO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BS-PO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BS-PO_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BS-PO_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BS-PO_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logoOneway" src="images/bitstampLogo.png">
+                          </a>to<a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logoOneway" src="images/bxLogo.png">
+                          </a></td>
+                      <td class="danger" id="BS-BX_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BS-BX_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BS-BX_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BS-BX_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BS-BX_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                   <!--  <tr>
+                      <td><a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logoOneway" src="images/bitstampLogo.png">
+                          </a> to <a target ="_blank" href="https://www.huobi.pro/">
+                            <img class="logoOneway" src="images/huobiLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BS-HB_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BS-HB_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BS-HB_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BS-HB_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BS-HB_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+ -->
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logoOneway" src="images/bitstampLogo.png">
+                          </a>to<a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logoOneway" src="images/bitfinexLogo.png">
+                          </a></td>
+                      <td class="danger" id="BS-BF_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BS-BF_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BS-BF_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BS-BF_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BS-BF_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logoOneway" src="images/bitstampLogo.png">
+                          </a> to <a target ="_blank" href="https://bittrex.com/">
+                            <img class="logoOneway" src="images/bittrexLogo.png">
+                          </a></td>
+                      <td class="danger" id="BS-BT_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BS-BT_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BS-BT_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BS-BT_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BS-BT_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logoOneway" src="images/bitstampLogo.png">
+                          </a> to <a target ="_blank" href="https://www.binance.com/?ref=11125918">
+                            <img class="logoOneway" src="images/binanceLogo.png">
+                          </a></td>
+                      <td class="danger" id="BS-BN_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BS-BN_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BS-BN_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                     <tr>
+
+
+                     <td><a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logoOneway" src="images/bitstampLogo.png">
+                          </a> to <a target ="_blank" href="https://accounts.quoinex.com/sign-up?affiliate=DiMNhHR388414">
+                            <img class="logoOneway" src="images/quoinexLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BS-QN_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BS-QN_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+                     <tr>
+
+                       <td><a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logoOneway" src="images/bitstampLogo.png">
+                          </a> to <a target ="_blank" href="https://www.korbit.co.kr">
+                            <img class="logoOneway" src="images/korbitLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BS-KB_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BS-KB_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"   id="BS-KB_XRP_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="info"  id="BS-KB_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.binance.com/?ref=11125918">
+                            <img class="logoOneway" src="images/binanceLogo.png">
+                          </a> to <a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logoOneway" src="images/krakenLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BN-KK_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BN-KK_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BN-KK_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+
+
+                    <tr>
+
+                       <td><a target ="_blank" href="https://www.binance.com/?ref=11125918">
+                            <img class="logoOneway" src="images/binanceLogo.png">
+                          </a>to <a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logoOneway" src="images/coinoneLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BN-CO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BN-CO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BN-CO_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.binance.com/?ref=11125918">
+                            <img class="logoOneway" src="images/binanceLogo.png">
+                          </a>to<a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logoOneway" src="images/poloniexLogo.png">
+                          </a></td>
+                      <td class="danger" id="BN-PO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BN-PO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BN-PO_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.binance.com/?ref=11125918">
+                            <img class="logoOneway" src="images/binanceLogo.png">
+                          </a>to<a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logoOneway" src="images/bxLogo.png">
+                          </a></td>
+                      <td class="danger" id="BN-BX_BTC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="success" id="BN-BX_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed"  id="BN-BX_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <!-- <tr>
+                      <td><a target ="_blank" href="https://www.binance.com/?ref=11125918">
+                            <img class="logoOneway" src="images/binanceLogo.png">
+                          </a> to <a target ="_blank" href="https://www.huobi.pro/">
+                            <img class="logoOneway" src="images/huobiLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BN-HB_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BN-HB_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BN-HB_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> -->
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.binance.com/?ref=11125918">
+                            <img class="logoOneway" src="images/binanceLogo.png">
+                          </a>to<a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logoOneway" src="images/bitfinexLogo.png">
+                          </a></td>
+                      <td class="danger" id="BN-BF_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BN-BF_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BN-BF_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.binance.com/?ref=11125918">
+                            <img class="logoOneway" src="images/binanceLogo.png">
+                          </a> to <a target ="_blank" href="https://bittrex.com/">
+                            <img class="logoOneway" src="images/bittrexLogo.png">
+                          </a></td>
+                      <td class="danger" id="BN-BT_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BN-BT_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BN-BT_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.binance.com/?ref=11125918">
+                            <img class="logoOneway" src="images/binanceLogo.png">
+                          </a> to <a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logoOneway" src="images/bitstampLogo.png">
+                          </a></td>
+                      <td class="danger" id="BN-BS_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BN-BS_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="BN-BS_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+
+                      <td><a target ="_blank" href="https://www.binance.com/?ref=11125918">
+                            <img class="logoOneway" src="images/binanceLogo.png">
+                          </a> to <a target ="_blank" href="https://accounts.quoinex.com/sign-up?affiliate=DiMNhHR388414">
+                            <img class="logoOneway" src="images/quoinexLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BN-QN_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BN-QN_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+                     <tr>
+
+                       <td><a target ="_blank" href="https://www.binance.com/?ref=11125918">
+                            <img class="logoOneway" src="images/binanceLogo.png">
+                          </a> to <a target ="_blank" href="https://www.korbit.co.kr">
+                            <img class="logoOneway" src="images/korbitLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BN-KB_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BN-KB_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"   id="BN-KB_XRP_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="info"  id="BN-KB_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+                     <tr>
+
+                     <td><a target ="_blank" href="https://accounts.quoinex.com/sign-up?affiliate=DiMNhHR388414">
+                            <img class="logoOneway" src="images/quoinexLogo.png">
+                          </a> to <a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logoOneway" src="images/krakenLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="QN-KK_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="QN-KK_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="QN-KK_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+
+
+                    <tr>
+
+                       <td><a target ="_blank" href="https://accounts.quoinex.com/sign-up?affiliate=DiMNhHR388414">
+                            <img class="logoOneway" src="images/quoinexLogo.png">
+                          </a>to <a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logoOneway" src="images/coinoneLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="QN-CO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="QN-CO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="QN-CO_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://accounts.quoinex.com/sign-up?affiliate=DiMNhHR388414">
+                            <img class="logoOneway" src="images/quoinexLogo.png">
+                          </a>to<a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logoOneway" src="images/poloniexLogo.png">
+                          </a></td>
+                      <td class="danger" id="QN-PO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="QN-PO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="QN-PO_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://accounts.quoinex.com/sign-up?affiliate=DiMNhHR388414">
+                            <img class="logoOneway" src="images/quoinexLogo.png">
+                          </a>to<a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logoOneway" src="images/bxLogo.png">
+                          </a></td>
+                      <td class="danger" id="QN-BX_BTC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="success" id="QN-BX_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed"  id="QN-BX_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <!-- <tr>
+                      <td><a target ="_blank" href="https://accounts.quoinex.com/sign-up?affiliate=DiMNhHR388414">
+                            <img class="logoOneway" src="images/quoinexLogo.png">
+                          </a> to <a target ="_blank" href="https://www.huobi.pro/">
+                            <img class="logoOneway" src="images/huobiLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="QN-HB_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="QN-HB_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="QN-HB_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> -->
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://accounts.quoinex.com/sign-up?affiliate=DiMNhHR388414">
+                            <img class="logoOneway" src="images/quoinexLogo.png">
+                          </a>to<a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logoOneway" src="images/bitfinexLogo.png">
+                          </a></td>
+                      <td class="danger" id="QN-BF_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="QN-BF_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="QN-BF_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://accounts.quoinex.com/sign-up?affiliate=DiMNhHR388414">
+                            <img class="logoOneway" src="images/quoinexLogo.png">
+                          </a> to <a target ="_blank" href="https://bittrex.com/">
+                            <img class="logoOneway" src="images/bittrexLogo.png">
+                          </a></td>
+                      <td class="danger" id="QN-BT_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="QN-BT_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="QN-BT_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://accounts.quoinex.com/sign-up?affiliate=DiMNhHR388414">
+                            <img class="logoOneway" src="images/quoinexLogo.png">
+                          </a> to <a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logoOneway" src="images/bitstampLogo.png">
+                          </a></td>
+                      <td class="danger" id="QN-BS_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="QN-BS_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" id="QN-BS_LTC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+
+                     <td><a target ="_blank" href="https://accounts.quoinex.com/sign-up?affiliate=DiMNhHR388414">
+                            <img class="logoOneway" src="images/quoinexLogo.png">
+                          </a> to <a target ="_blank" href="https://www.binance.com/4">
+                            <img class="logoOneway" src="images/binanceLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="QN-BN_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="QN-BN_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"  style="vertical-align: middle;">-</td>
+
+                      <td class="info"  style="vertical-align: middle;">-</td>
+
+                      <td class="yed" style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+                     <tr>
+
+                       <td><a target ="_blank" href="https://accounts.quoinex.com/sign-up?affiliate=DiMNhHR388414">
+                            <img class="logoOneway" src="images/quoinexLogo.png">
+                          </a> to <a target ="_blank" href="https://www.korbit.co.kr">
+                            <img class="logoOneway" src="images/korbitLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="QN-KB_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="QN-KB_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning"   id="QN-KB_XRP_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="info"  id="QN-KB_ETC_oneWay" style="vertical-align: middle;">-</td>
+
+                      <td class="yed" style="vertical-align: middle;">-</td>
+
+                    </tr>
+
+
+
+
+                  </tbody>
+
+
+                </table>
+
+              </div> <!-- /.table-responsive -->
+
+              <ul class="nav navbar-nav navbar-right">
+
+            </ul>
+
+            </div> <!-- /.panel-body -->
+
+          </div> <!-- /.panel-primary -->
+
+        </div> <!-- /.col -->
+
+      </div> <!-- /.row -->
+
+
+
+    </div> <!-- /.container -->
+
+
+
+
+
+
+  </body>
+
+
+</html>
